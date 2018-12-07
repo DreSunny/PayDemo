@@ -1,0 +1,33 @@
+package com.andata.conf;
+
+/* *
+ *类名：AlipayConfig
+ *功能：基础配置类
+ *详细：设置帐户有关信息及返回路径
+ *提示：如何获取安全校验码和合作身份者ID
+ *1.用您的签约支付宝账号登录支付宝网站(www.alipay.com)
+ *2.点击“商家服务”(https://b.alipay.com/order/myOrder.htm)
+ *3.点击“查询合作者身份(PID)”、“查询安全校验码(Key)”
+ *安全校验码查看时，输入支付密码后，页面呈灰色的现象，怎么办？
+ *解决方法：
+ *1、检查浏览器配置，不让浏览器做弹框屏蔽设置
+ *2、更换浏览器或电脑，重新登录查询。
+ */
+
+public class AlipayConfig {
+	//ServiceURL
+	public static String ServiceUrl="https://openapi.alipay.com/gateway.do";
+	//APP支付宝支付业务：app_id
+	public static String app_id = "2018012502071547";
+	// 商户的私钥,使用支付宝自带的openssl工具生成。
+	public static String private_key = "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCJ36NK8Wx4fuZx0PjO2gOaYWE9aujDrkmKE7W9ntrOjRVFwZvC8LRf9/DxYBPZm9AtL4dwO2AFYAp9ktVnh/3RPxsq6y8ObLY0VqnF7JI7grdT3aIxmilbAAnYujDMbSIbL7Qrm61l+1BQfqLVEv++sBFHHzqyWBxjFvzqTpmrwtVlSjukdMo7rSPFL+V9cLI1CTuDBhMfzaIZ3Lcki8ESFMFoRFUeyXw9mZTQxKchF0Q2/898kVbe64MOdm0LS2hXI3VhbmQtymwPCM2Yq+PAV3OPsuBnvQnA0RH0f7pQQ1CzyWZoRmownHh7WTcAvUlXOQYbtXQWJHidARc0uD+RAgMBAAECggEARvDMO453apSZDC0jKIPi4LeEai6tL6po6mPz2mp3WVocfPT+qVJi7RJNZlUyQYC7n9RZ0vSqFnnxS+WWapv9jIH0/6NdZgWnxsxktJNiNr6uh7d9chpJdypQ5rP+0eDBcM2d3eZPVS73h0Nxk0MgVkSPz1GRSRyvFolIf2MMDOUAjxqNzyh5kWFv1L5yrMIFq30BjOB3Z1Ii14P3PWxZ/XdMfBTPFWnACx37cCZyW4f6dUsSnIN2KmL2zTLXI/YhUbCVJE5xdBEk+xiWxBdU597U+T3q2rKIGl8/SJKmZcNqe0VKQFWNjfFR7kz5wfHq7RXaBHX7qF0KdOYUk+BjBQKBgQDnXhyinb5LAsk/s+PGjXy2hVwpduLr+xZw++qfPYpxqIjQHkS4z0sg0VGLvK+FjUUu5VORwJ5ZlUu9UmqA0Cp+c/UqoPFWQDFGRO6jsJrEcIKqoiyPGkJFG6nStJpmuk4REnnMqZmlREYfLgQlcJlhWwKA3UTPPaWIT5IhfPV1HwKBgQCYjVxXL35OIqV+N0D3J7tM2lgLBqX8fLrRyG8jZKx8Iu0nnMipGdJLkJ135MOpIphovgSErJsUcYZv/CdXaYbr2PKs85V2rLUVsXZ46nUgvsFxQClHzP6bdfnMUfEZ+gxqpamoM8k7PHf/Ch+lMxlHXg59Fom53U+wcvZ33OCFTwKBgCPlfhvczYFl1UOE7XoIyain2Dy2rU5fjoPJEgXSzoAD3fYsPA1QXB+jWjuL8s+Ns4YrHmQmtmq/txiQiOWjZnRoGUmb3tW67+ovF7dd1yVTL3K55p/tOwrt19NRIgN+NE6Bx1PxnFz/0sFTqmEEr0djj2fe7KYasmwLrGh1sr+RAoGALEvv4kkiLeIVl/7HWH0q//fu1NTLYfN98+h1jRtwkmM55eS6x4995v9JGkVNI1GuW8vBWB0esuL8HIxliBZWXSmT3fClF96yfmgXdKjv9eAuH4p38iduTwoEzPWGQvq+nEEacIMJDbBTT7VK1xdtYbHIFz5yI4xF1YCsXMXAVDUCgYEAzi0a74IvakkhuAFlA3Arf55y9Z0MNIjg0G1AcKtcvGGy3dop4zc+f71PmWk7KSGOzzLkgkRjFtjM/gTROADmrim8rKfqRlOBEv6YHZcHa75jq5PKsckzoInsLSwh8wI2QNzcOw/t9+BgGrj8buAX6mhx8j4WvCdBpbguKYKOwzw=";
+	// 应用的公钥，无需修改该值
+	public static String ali_public_key  = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArVO7yoEONzvOubm3SKHClQCkO/3gjsbvlTMiELwAydawLiesz4Y6LAp3oyP9ch0Ln6HA7dbJ0N/cb5HDystnz/E/GG0O134sfh0m0uP2M028weqrx65IjPvU57kR45XvpB6ECGgzr7SEgRbxn4k0GkfHEYaNUW/f9/MMtfXd4inhtolEgD9QuBT4BUcZjrqJsPxqIYNYnsvz0Si3u6+nI8X1SF6HpRX1+vNixdtDPMpGQ/RFJql0BKd9NINPJZelC67QEW9Lu1js4WLaHRtRSnSyrVRsOEqIHZm2LBzWf6PoYz9H+shGa5ezGM3ZmXNwK5+2UPeXOhXr3/cocX0QKwIDAQAB";
+	// 支付宝的公钥，去open.alipay.com对应应用下查看。
+	public static String zfb_public_key  = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoFif05YPCMCa5fnKrspnSHfs13rG0b+nmZ7uFEezPTO+RVhvnt4B5J3v2vHKMrFDfZkN7vDhSTYnyXiXbEClMlAZlFyhIt29881xNGYD6xefGJ+j12CYKKzahuQndKOoIe6Koi0wJgGv/5BWiBZUdzdlIsE/UEvIAbf+BMCVjiwckxsBcVNbFviBj6vSLvyzh6RNTg+y6DcnRNL/EjXb6xZY+NLwTeLMr7VuKULUH1ojxuT8iWOmdnZPYkGptJ3M7ZFkRj11hhwoA+yV4jJkvqJipGbV90L4kT66E5zLLXZfPVUBVpTuBlvrTLyCJHqTIPoCohnnrgZuC1qjjG3MLQIDAQAB";
+	// 字符编码格式 目前支持 gbk 或 utf-8
+	public static String input_charset = "UTF-8";
+	
+	
+
+}
