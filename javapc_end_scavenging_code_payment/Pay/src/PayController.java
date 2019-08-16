@@ -116,9 +116,9 @@ public class PayController {
         key = key.replaceAll("-", "").substring(0, 15);
         return key;
     }
-//    private static String APPID="wx830c4d2c6a666923";//微信公众号APPID
-//    private static String WXPAYMENTACCOUNT="1497867872";//微信公众号的商户号
-//    private static String APIKEY="0F1DBAD6B1E7D6A23E49B938152D58DE";//微信公众号的商户支付密钥
+//    private static String APPID="wxxxxxxxx";//微信公众号APPID
+//    private static String WXPAYMENTACCOUNT="xxxxxx";//微信公众号的商户号
+//    private static String APIKEY="0F1Dxxxxxxxxxxxx";//微信公众号的商户支付密钥
 //    private static String basePath="https://api.mch.weixin.qq.com/pay/unifiedorder";
 //    private static String notify_url="http://www.andata.com.cn/wxPayCallBack.do";
 //    @Resource
